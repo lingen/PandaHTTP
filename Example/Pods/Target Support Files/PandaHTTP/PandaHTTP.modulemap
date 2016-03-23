@@ -1,0 +1,6 @@
+framework module PandaHTTP {
+  umbrella header "PandaHTTP-umbrella.h"
+
+  export *
+  module * { export * }
+}

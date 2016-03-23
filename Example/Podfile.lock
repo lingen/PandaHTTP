@@ -1,0 +1,14 @@
+PODS:
+  - PandaHTTP (0.1.0)
+
+DEPENDENCIES:
+  - PandaHTTP (from `../`)
+
+EXTERNAL SOURCES:
+  PandaHTTP:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PandaHTTP: ee68ca3e7dedfb97f56f0f74d238c21f01799e9a
+
+COCOAPODS: 0.39.0

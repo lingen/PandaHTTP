@@ -1,0 +1,25 @@
+{
+  "name": "PandaHTTP",
+  "version": "0.1.0",
+  "summary": "A short description of PandaHTTP.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PandaHTTP",
+  "license": "MIT",
+  "authors": {
+    "lingen.liu": "lingen.liu@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PandaHTTP.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "PandaHTTP": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
