@@ -7,7 +7,6 @@
 //
 
 #import "OPHNetwork.h"
-#import "AFNetworking.h"
 #import "OPHRequest.h"
 
 
@@ -44,10 +43,6 @@ static NSString* Content_Length = @"Content-Length";
 static NSString* JSON_CONTENT_TYPE = @"application/json";
 
 @interface OPHNetwork()
-/**
- *  网络管理
- */
-@property (nonatomic,strong) AFURLSessionManager* session;
 
 @end
 
@@ -68,7 +63,6 @@ static NSString* JSON_CONTENT_TYPE = @"application/json";
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[OPHNetwork alloc] init];
-        instance.session = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     });
     return instance;
 }
