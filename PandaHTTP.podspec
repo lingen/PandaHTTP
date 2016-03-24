@@ -15,11 +15,12 @@ Pod::Spec.new do |s|
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
+    PandaHTTP是对HTTP的一个封装，使得对于HTTP的使用更方便
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PandaHTTP"
+  s.homepage         = "https://github.com/openpandaOrg/PandaHTTP"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "lingen.liu" => "lingen.liu@gmail.com" }
@@ -34,7 +35,7 @@ Pod::Spec.new do |s|
     'PandaHTTP' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.public_header_files = 'Pod/Classes/**/*.h'
+   # s.frameworks = 'UIKit', 'MapKit'
+   # s.dependency 'AFNetworking', '~> 3.0'
 end

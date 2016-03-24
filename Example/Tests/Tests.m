@@ -7,6 +7,7 @@
 //
 
 @import XCTest;
+#import "OPH.h"
 
 @interface Tests : XCTestCase
 
@@ -28,7 +29,30 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    
+    OPHRequest* request = [OPHRequest reqeust:@"http://httpbin.org/get" type:OPH_HTTP_GET];
+    
+    OPHResponse* response = [[OPHNetwork sharedInstance] syncRequestGet:request];
+    
+    
+    NSDictionary* result = [response excepedNSDictionaryResult];
+    
+    [self waitForTimeInterval:3];
+}
+
+-(void)testSyncExample{
+    
+}
+
+
+- (void)waitForTimeInterval:(NSTimeInterval)delay
+{
+    XCTestExpectation *expectation = [self expectationWithDescription:@"wait"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [expectation fulfill];
+    });
+    
+    [self waitForExpectationsWithTimeout:delay + 1 handler:nil];
 }
 
 @end

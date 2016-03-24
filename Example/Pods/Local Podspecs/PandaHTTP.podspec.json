@@ -2,8 +2,8 @@
   "name": "PandaHTTP",
   "version": "0.1.0",
   "summary": "A short description of PandaHTTP.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/PandaHTTP",
+  "description": "PandaHTTP是对HTTP的一个封装，使得对于HTTP的使用更方便",
+  "homepage": "https://github.com/openpandaOrg/PandaHTTP",
   "license": "MIT",
   "authors": {
     "lingen.liu": "lingen.liu@gmail.com"
@@ -21,5 +21,6 @@
     "PandaHTTP": [
       "Pod/Assets/*.png"
     ]
-  }
+  },
+  "public_header_files": "Pod/Classes/**/*.h"
 }

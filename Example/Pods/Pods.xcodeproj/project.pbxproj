@@ -10,6 +10,39 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>02B96FDD56914B7DB390145F1DD8C81B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9A3A4E394B4DBBF69DB0AA25C2ADB4D3</string>
+				<string>C094FD99B3DEBBDA9373EE7D4CEFE1F2</string>
+				<string>8299C6B7B2EA02E2C2DBF55AF1847B07</string>
+				<string>6F6A8FA4A5873C15225AC6058ED79916</string>
+				<string>AAED1A9DF9A22168E682713F3CC0B703</string>
+				<string>032716AE715D8AD23DDC4F563328C8FB</string>
+				<string>10DCF6C741D2A421BC03B99F247BC8D6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>032716AE715D8AD23DDC4F563328C8FB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D7C38435CB02CB7CD615A8D55643E7C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>03CA91998D6773EC5D02B3DB87B8353E</key>
 		<dict>
 			<key>buildSettings</key>
@@ -115,6 +148,62 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>086AA0586AFBE85167868D06807A4367</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9D51CE4A35F3617805225364DB82DA6E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/PandaHTTP/PandaHTTP-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/PandaHTTP/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/PandaHTTP/PandaHTTP.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>PandaHTTP</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
 		<key>0B57334D6C23DADAA4F7D802A5760EB2</key>
 		<dict>
 			<key>buildSettings</key>
@@ -188,6 +277,13 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>0E3D9F6AD71950A8AE9EC51046920234</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C07AD154E71777921AE5936ADA81A102</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>0EC632CE9CB5C280DD5DAC4432F8F32E</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -203,6 +299,20 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>10DCF6C741D2A421BC03B99F247BC8D6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E7DDFFB2A60567D727EC880E63F0508C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>1482F3C1974256BDF718C4253B4F4343</key>
 		<dict>
 			<key>containerPortal</key>
@@ -212,7 +322,7 @@
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>2BADEA0E08307A682B6D2746860BAD00</string>
+			<string>A6720D1466DD3334234CD34F2E7B9EFA</string>
 			<key>remoteInfo</key>
 			<string>PandaHTTP</string>
 		</dict>
@@ -283,6 +393,17 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
+		<key>1A1949D39E71F826AAB5E402B820EA5E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>1C063EFBB01480441984FE740EA9B317</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -338,33 +459,88 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2BADEA0E08307A682B6D2746860BAD00</key>
+		<key>2546D5613E8091430BCA7D360819B153</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>9E9D94BC0E9949D103468F290AA5220B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F02F4185273D9BADBD1B2CAF9A605D9B</string>
-				<string>88F85C2324FD5F46080A1882B7CCB927</string>
-				<string>DAC02EC8574D4C1FC044B88F26D66C5C</string>
-				<string>5F4078EDCDE5B25A963ADDCB8F8507F0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>D30C520651B0E426F37A249A0F583A88</string>
-			</array>
+			<key>fileRef</key>
+			<string>AC2E94ED6D5763F65FDC23DFE8DA427F</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>28115A7BC34C28297A932C02E33CA8F0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>77F865C6EA18615820FC6F6132963342</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2AD32C5B103794E9B06DDCAE70185B00</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OPHJsonStatusResult.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D4FE2498E33FE04EA55353421B77BE4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9D51CE4A35F3617805225364DB82DA6E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/PandaHTTP/PandaHTTP-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/PandaHTTP/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/PandaHTTP/PandaHTTP.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>PandaHTTP</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>PandaHTTP</string>
-			<key>productName</key>
-			<string>PandaHTTP</string>
-			<key>productReference</key>
-			<string>0EC632CE9CB5C280DD5DAC4432F8F32E</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
+			<string>Debug</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -393,6 +569,32 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>316C8F82D652EC1BEE68228214712D72</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FA81E958E7122678AD1EA8100B648956</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>359880AACAD03CC5D4E55DD5A05DDD0C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OPHJsonStatusResult.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>385B4E3A3F58F28533D8D262DC8367AA</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -405,6 +607,13 @@
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>39701E3B5CC2B6D3353BFF4CFAA25F98</key>
+		<dict>
+			<key>fileRef</key>
+			<string>359880AACAD03CC5D4E55DD5A05DDD0C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>39EBF1F4FBDCC4351AA3D554DD34D6DD</key>
 		<dict>
@@ -419,20 +628,6 @@
 			<string>E100377B6B1B6C800E41EB639A84F508</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>3B814CBDC0705BDF9249567747A9831E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E7DDFFB2A60567D727EC880E63F0508C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>3E4E89230EF59BC255123B67864ACF77</key>
 		<dict>
@@ -456,7 +651,7 @@
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>2BADEA0E08307A682B6D2746860BAD00</string>
+			<string>A6720D1466DD3334234CD34F2E7B9EFA</string>
 			<key>remoteInfo</key>
 			<string>PandaHTTP</string>
 		</dict>
@@ -486,6 +681,54 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>4ADA1D3ED2471F3F1F5C8C0565243F62</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OPHRequest.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7C38435CB02CB7CD615A8D55643E7C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OPHResponse.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5111B008C1E06591BE9AA126BBC0C223</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9D51CE4A35F3617805225364DB82DA6E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>PandaHTTP</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
 		<key>548192BBF8EF940856266081BF41CA3B</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -499,23 +742,20 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>58C406C718E2A587FA1C6E1A3C08D687</key>
+		<key>5696D8F29B90E45AE7F57885B8AA6C53</key>
 		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>children</key>
+			<array>
+				<string>B4A8D9467352D09AF060373C0D27A060</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5C661662DC01363367560DC53AE75197</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pod</string>
+			<key>path</key>
+			<string>Pod</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5E1C36D054780FFD06FF45ED3A77A4C6</key>
 		<dict>
@@ -527,19 +767,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5F4078EDCDE5B25A963ADDCB8F8507F0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3B814CBDC0705BDF9249567747A9831E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
@@ -580,27 +807,26 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>69BBB4EC1CCA5E6310EFDE955F5B2835</key>
+		<key>694A02375CC8E8E879D033498B981E1C</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9D51CE4A35F3617805225364DB82DA6E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>PandaHTTP</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5111B008C1E06591BE9AA126BBC0C223</string>
+				<string>789FB02565B1E6419D004D15FAD20B2E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6BE9E92F0CFEAC57CC0A7289BDB78EB8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD95C0F7B5B690C5AF7FED80FF83810A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>6DA027D69327155F889CF28650CF52CB</key>
 		<dict>
@@ -631,6 +857,46 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>6F6A8FA4A5873C15225AC6058ED79916</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C8631C107BDB128ABBFC81DB477E4EC1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>70274883664430DB2BB1D5E395C70E74</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSData+OPH.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7147B5BF7C69BF1D32DA9D3448F96B51</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CC2EC3D0ACF356A415395CF2BBC5BDB1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>71FF65D20B67FAC81DD877D16D867B4D</key>
 		<dict>
 			<key>isa</key>
@@ -638,7 +904,7 @@
 			<key>name</key>
 			<string>PandaHTTP</string>
 			<key>target</key>
-			<string>2BADEA0E08307A682B6D2746860BAD00</string>
+			<string>A6720D1466DD3334234CD34F2E7B9EFA</string>
 			<key>targetProxy</key>
 			<string>3EAA372589964EBB727C7C4F0DA3B0BC</string>
 		</dict>
@@ -704,6 +970,66 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>74058437CF8F0C220724AEEE86B90CA4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2D4FE2498E33FE04EA55353421B77BE4</string>
+				<string>086AA0586AFBE85167868D06807A4367</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>77F865C6EA18615820FC6F6132963342</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OPHRequest.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>789FB02565B1E6419D004D15FAD20B2E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9D51CE4A35F3617805225364DB82DA6E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>PandaHTTP</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7B57C4D935F92F988DED4F60B35ACB22</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
@@ -732,124 +1058,32 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>81DBE25AA6C4133793AA2F425939ECAB</key>
+		<key>7FC117664B077DF0561C7CA0DDF4A620</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OPHNetwork.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8299C6B7B2EA02E2C2DBF55AF1847B07</key>
 		<dict>
 			<key>fileRef</key>
-			<string>AD95C0F7B5B690C5AF7FED80FF83810A</string>
+			<string>2AD32C5B103794E9B06DDCAE70185B00</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>83198CBEA3F2DE2E5C9BE9DEAB25AF0F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9D51CE4A35F3617805225364DB82DA6E</string>
-			<key>buildSettings</key>
+			<key>settings</key>
 			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/PandaHTTP/PandaHTTP-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/PandaHTTP/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<key>ATTRIBUTES</key>
 				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
+					<string>Public</string>
 				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/PandaHTTP/PandaHTTP.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>PandaHTTP</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
 			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>84CFD1C12C8CDF0876FFFB4D772F0952</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9D51CE4A35F3617805225364DB82DA6E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/PandaHTTP/PandaHTTP-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/PandaHTTP/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/PandaHTTP/PandaHTTP.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>PandaHTTP</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
 		</dict>
 		<key>88A5E072C7F87D7EBE98401D048410E5</key>
 		<dict>
@@ -857,19 +1091,6 @@
 			<string>3E4E89230EF59BC255123B67864ACF77</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>88F85C2324FD5F46080A1882B7CCB927</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>58C406C718E2A587FA1C6E1A3C08D687</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>8D9022308916F56C18D641E38BCDDDA5</key>
 		<dict>
@@ -885,21 +1106,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>925890BF6A8008A9656B9F454C08DEBF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FC1E92DA537B9C1AFBF40DFDEAFFDBCC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pod</string>
-			<key>path</key>
-			<string>Pod</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>96659F13BFDF636523AFFA72748987EC</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -912,30 +1118,6 @@
 			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>97D9F4107F607841267D36CD1DBC36C7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>98A974F106A6EB2ABFDC154A05C0F818</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>FD1D5B6E1C0A67C9951D52D06BD24803</string>
-			<key>remoteInfo</key>
-			<string>PandaHTTP-PandaHTTP</string>
 		</dict>
 		<key>99056C4BFA7B86CE4985B8D0A59D39EC</key>
 		<dict>
@@ -957,6 +1139,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>9A3A4E394B4DBBF69DB0AA25C2ADB4D3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>70274883664430DB2BB1D5E395C70E74</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>9D51CE4A35F3617805225364DB82DA6E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -969,20 +1165,6 @@
 			<string>PandaHTTP.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9E9D94BC0E9949D103468F290AA5220B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>84CFD1C12C8CDF0876FFFB4D772F0952</string>
-				<string>83198CBEA3F2DE2E5C9BE9DEAB25AF0F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
 		</dict>
 		<key>A4E089F88688F72E8F53B27C9107E45A</key>
 		<dict>
@@ -1021,6 +1203,34 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>A6720D1466DD3334234CD34F2E7B9EFA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>74058437CF8F0C220724AEEE86B90CA4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C5A5D7D9624559154C4DEF7FE646D6A1</string>
+				<string>316C8F82D652EC1BEE68228214712D72</string>
+				<string>7147B5BF7C69BF1D32DA9D3448F96B51</string>
+				<string>02B96FDD56914B7DB390145F1DD8C81B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C412052FDC6678336AEC9CB7F286374C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PandaHTTP</string>
+			<key>productName</key>
+			<string>PandaHTTP</string>
+			<key>productReference</key>
+			<string>0EC632CE9CB5C280DD5DAC4432F8F32E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
 		<key>A6CC6A67447FDFBF787922079628EC99</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1033,6 +1243,13 @@
 			<string>Pods-PandaHTTP_Example-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7AE4602451B86EF28AE8FE2066B204E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7FC117664B077DF0561C7CA0DDF4A620</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>A7E114573F117D2CAD55CF4D3DA848B6</key>
 		<dict>
@@ -1103,7 +1320,7 @@
 			<key>name</key>
 			<string>PandaHTTP</string>
 			<key>target</key>
-			<string>2BADEA0E08307A682B6D2746860BAD00</string>
+			<string>A6720D1466DD3334234CD34F2E7B9EFA</string>
 			<key>targetProxy</key>
 			<string>1482F3C1974256BDF718C4253B4F4343</string>
 		</dict>
@@ -1122,6 +1339,20 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>AAED1A9DF9A22168E682713F3CC0B703</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4ADA1D3ED2471F3F1F5C8C0565243F62</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>AC222ABE8AFD61E7CFC7953CC787457E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1132,6 +1363,19 @@
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Pods-PandaHTTP_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AC2E94ED6D5763F65FDC23DFE8DA427F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OPHResponse.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1175,12 +1419,30 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>B372C0BE9CFE2D9943273F317644190B</key>
+		<key>B4A8D9467352D09AF060373C0D27A060</key>
 		<dict>
-			<key>fileRef</key>
-			<string>1C6F8FCFB12070D62CDBCD31889D4933</string>
+			<key>children</key>
+			<array>
+				<string>70274883664430DB2BB1D5E395C70E74</string>
+				<string>C07AD154E71777921AE5936ADA81A102</string>
+				<string>CAE98EAC27F948B454CCB0BCA2084F9E</string>
+				<string>2AD32C5B103794E9B06DDCAE70185B00</string>
+				<string>359880AACAD03CC5D4E55DD5A05DDD0C</string>
+				<string>C8631C107BDB128ABBFC81DB477E4EC1</string>
+				<string>7FC117664B077DF0561C7CA0DDF4A620</string>
+				<string>4ADA1D3ED2471F3F1F5C8C0565243F62</string>
+				<string>77F865C6EA18615820FC6F6132963342</string>
+				<string>4D7C38435CB02CB7CD615A8D55643E7C</string>
+				<string>AC2E94ED6D5763F65FDC23DFE8DA427F</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B5A8CD8BB488DF2DCB9029D01BBDFC8A</key>
 		<dict>
@@ -1236,13 +1498,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BE897C481B0ABFD4F267413E674D7814</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D917EC16DF72CBB1914AC3F4F6BEE561</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
 		<dict>
 			<key>children</key>
@@ -1253,6 +1508,88 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C07AD154E71777921AE5936ADA81A102</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSData+OPH.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C094FD99B3DEBBDA9373EE7D4CEFE1F2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAE98EAC27F948B454CCB0BCA2084F9E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C412052FDC6678336AEC9CB7F286374C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>PandaHTTP-PandaHTTP</string>
+			<key>target</key>
+			<string>CF3E2C2344D590157DB0A9F0DE1F84E3</string>
+			<key>targetProxy</key>
+			<string>E82D8921E2B8E3DDE8B238CB39C88386</string>
+		</dict>
+		<key>C5A5D7D9624559154C4DEF7FE646D6A1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0E3D9F6AD71950A8AE9EC51046920234</string>
+				<string>39701E3B5CC2B6D3353BFF4CFAA25F98</string>
+				<string>A7AE4602451B86EF28AE8FE2066B204E</string>
+				<string>28115A7BC34C28297A932C02E33CA8F0</string>
+				<string>2546D5613E8091430BCA7D360819B153</string>
+				<string>6BE9E92F0CFEAC57CC0A7289BDB78EB8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C8631C107BDB128ABBFC81DB477E4EC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OPHNetwork.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAE98EAC27F948B454CCB0BCA2084F9E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OPH.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1268,6 +1605,13 @@
 			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC2EC3D0ACF356A415395CF2BBC5BDB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1C6F8FCFB12070D62CDBCD31889D4933</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>CCA34884557E0AE4E6F300C5D49BB96E</key>
 		<dict>
@@ -1298,6 +1642,31 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>CF3E2C2344D590157DB0A9F0DE1F84E3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>694A02375CC8E8E879D033498B981E1C</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7B57C4D935F92F988DED4F60B35ACB22</string>
+				<string>DA58A770E2018DD6F99A582F7F9A868D</string>
+				<string>1A1949D39E71F826AAB5E402B820EA5E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PandaHTTP-PandaHTTP</string>
+			<key>productName</key>
+			<string>PandaHTTP-PandaHTTP</string>
+			<key>productReference</key>
+			<string>1C6F8FCFB12070D62CDBCD31889D4933</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
 		<key>D18A6ADE1F2BB2AC2325D6DE62BA773C</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1310,17 +1679,6 @@
 			<string>Pods-PandaHTTP_Tests-acknowledgements.markdown</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D30C520651B0E426F37A249A0F583A88</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>PandaHTTP-PandaHTTP</string>
-			<key>target</key>
-			<string>FD1D5B6E1C0A67C9951D52D06BD24803</string>
-			<key>targetProxy</key>
-			<string>98A974F106A6EB2ABFDC154A05C0F818</string>
 		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
@@ -1357,49 +1715,20 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>2BADEA0E08307A682B6D2746860BAD00</string>
-				<string>FD1D5B6E1C0A67C9951D52D06BD24803</string>
+				<string>A6720D1466DD3334234CD34F2E7B9EFA</string>
+				<string>CF3E2C2344D590157DB0A9F0DE1F84E3</string>
 				<string>1656B718A33A2072D25C21428CA98014</string>
 				<string>18AFAC8FA45F4A83806161FC470FD9EB</string>
 			</array>
 		</dict>
-		<key>D917EC16DF72CBB1914AC3F4F6BEE561</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ReplaceMe.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA1675925CB6DD12CCEED67E38555458</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>69BBB4EC1CCA5E6310EFDE955F5B2835</string>
-				<string>DE6E546EF87C1EAFBF32E3004C956AD7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DAC02EC8574D4C1FC044B88F26D66C5C</key>
+		<key>DA58A770E2018DD6F99A582F7F9A868D</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
-			<array>
-				<string>B372C0BE9CFE2D9943273F317644190B</string>
-			</array>
+			<array/>
 			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
+			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
@@ -1414,7 +1743,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>925890BF6A8008A9656B9F454C08DEBF</string>
+				<string>5696D8F29B90E45AE7F57885B8AA6C53</string>
 				<string>99056C4BFA7B86CE4985B8D0A59D39EC</string>
 			</array>
 			<key>isa</key>
@@ -1425,28 +1754,6 @@
 			<string>../..</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE6E546EF87C1EAFBF32E3004C956AD7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9D51CE4A35F3617805225364DB82DA6E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>PandaHTTP</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
 		</dict>
 		<key>E100377B6B1B6C800E41EB639A84F508</key>
 		<dict>
@@ -1549,6 +1856,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>E82D8921E2B8E3DDE8B238CB39C88386</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>CF3E2C2344D590157DB0A9F0DE1F84E3</string>
+			<key>remoteInfo</key>
+			<string>PandaHTTP-PandaHTTP</string>
+		</dict>
 		<key>E9EE65A19E566788C8E66346034496A2</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -1638,20 +1958,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>F02F4185273D9BADBD1B2CAF9A605D9B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>81DBE25AA6C4133793AA2F425939ECAB</string>
-				<string>BE897C481B0ABFD4F267413E674D7814</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
 		<key>F5A3BE1ED5880C87A3D0CAA94DF5CA91</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1665,17 +1971,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F63F4A69A53294D1CC00BF064E871D6F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
 		<key>F84F35E7C5339A7DBDB81C5D1612E188</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1687,20 +1982,12 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FC1E92DA537B9C1AFBF40DFDEAFFDBCC</key>
+		<key>FA81E958E7122678AD1EA8100B648956</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>D917EC16DF72CBB1914AC3F4F6BEE561</string>
-			</array>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>FCC52A76AEF9E437365656BFC66E9ECA</key>
 		<dict>
@@ -1714,31 +2001,6 @@
 			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FD1D5B6E1C0A67C9951D52D06BD24803</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>DA1675925CB6DD12CCEED67E38555458</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F63F4A69A53294D1CC00BF064E871D6F</string>
-				<string>97D9F4107F607841267D36CD1DBC36C7</string>
-				<string>5C661662DC01363367560DC53AE75197</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>PandaHTTP-PandaHTTP</string>
-			<key>productName</key>
-			<string>PandaHTTP-PandaHTTP</string>
-			<key>productReference</key>
-			<string>1C6F8FCFB12070D62CDBCD31889D4933</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

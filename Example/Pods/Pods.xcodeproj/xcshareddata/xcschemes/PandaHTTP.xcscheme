@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4B74E1F07B5AD7276023441D'
+               BlueprintIdentifier = '7991A7F6532610F90FCCABC1'
                BlueprintName = 'PandaHTTP'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PandaHTTP.framework'>
