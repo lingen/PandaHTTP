@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PandaHTTP"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "PandaHTTP是对HTTP的一个封装"
 
 # This description is used to generate tags and improve search results.
