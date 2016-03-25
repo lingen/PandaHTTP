@@ -36,11 +36,11 @@ typedef NS_ENUM(NSInteger,OPHRequestType) {
 
 -(NSString*) url;
 
-+(instancetype)reqeust:(NSString*)url type:(OPHRequestType)type;
++(instancetype)jsonReqeust:(NSString*)url type:(OPHRequestType)type;
 
-+(instancetype)reqeust:(NSString *)url type:(OPHRequestType)type params:(NSDictionary*)params;
++(instancetype)jsonReqeust:(NSString *)url type:(OPHRequestType)type params:(NSDictionary*)params;
 
-+(instancetype)reqeust:(NSString *)url type:(OPHRequestType)type params:(NSDictionary *)params timeout:(NSTimeInterval)timeout;
++(instancetype)jsonReqeust:(NSString *)url type:(OPHRequestType)type params:(NSDictionary *)params timeout:(NSTimeInterval)timeout;
 
 
 @end

@@ -30,10 +30,9 @@
 - (void)testExample
 {
     
-    OPHRequest* request = [OPHRequest reqeust:@"http://httpbin.org/get" type:OPH_HTTP_GET];
+    OPHRequest* request = [OPHRequest jsonReqeust:@"http://httpbin.org/get" type:OPH_HTTP_GET];
     
     OPHResponse* response = [[OPHNetwork sharedInstance] syncRequestGet:request];
-    
     
     NSDictionary* result = [response excepedNSDictionaryResult];
     

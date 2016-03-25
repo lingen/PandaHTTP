@@ -81,6 +81,7 @@ static NSString* JSON_CONTENT_TYPE = @"application/json";
  */
 -(void)asyncRequestDelete:(OPHRequest*)request resultBlock:(void (^)(OPHResponse* response))resultBlock{
     
+    
     __weak typeof (request) weakRequest = request;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         OPHResponse* reponse = [self p_syncRequest:weakRequest];
@@ -95,6 +96,8 @@ static NSString* JSON_CONTENT_TYPE = @"application/json";
 #pragma REPONSE
 
 -(OPHResponse*)p_syncRequest:(OPHRequest*)ophRequest{
+    
+    [self p_checkMainThread];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:ophRequest.url]];
     [request setHTTPMethod:[self p_getRequestMethod:ophRequest.type]];
@@ -148,6 +151,16 @@ static NSString* JSON_CONTENT_TYPE = @"application/json";
         return HTTP_DELETE;
     }
     return nil;
+}
+
+/**
+ *  检查是否在主线程进行操作
+ */
+-(void)p_checkMainThread{
+    BOOL isMainThread = [NSThread isMainThread];
+    if (isMainThread) {
+        [NSException raise:@"db main thread exception" format:@"DB Actions Not Allow in Main Thread"];
+    }
 }
 
 @end

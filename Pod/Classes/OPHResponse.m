@@ -61,6 +61,7 @@
  *  @return 返回实例
  */
 +(instancetype)errorStatusCodeResponse:(int)statusCode{
+
     OPHResponse* response = [[OPHResponse alloc] init];
     response.statusCode = statusCode;
     response.error = [NSError errorWithDomain:@"HTTP请求出错" code:OPH_SERVICE_ERROR userInfo:@{@"statusCode":@(statusCode)}];
@@ -73,11 +74,17 @@
  *  @return
  */
 -(OPHJsonStatusResult*)expectedJsonStatusResultObject{
+    if (![self isRequestOk]) {
+        return nil;
+    }
     return [self.data OPH_JsonStatusResult];
 }
 
 
 -(NSDictionary*)excepedNSDictionaryResult{
+    if (![self isRequestOk]) {
+        return nil;
+    }
     NSDictionary* json = [NSJSONSerialization JSONObjectWithData:self.data
                                                          options:kNilOptions
                                                            error:nil];
@@ -88,6 +95,9 @@
  *
  */
 -(NSString*)expectedStringResult{
+    if (![self isRequestOk]) {
+        return nil;
+    }
     return [self.data OPH_StringResult];
 }
 
