@@ -9,7 +9,7 @@
     "lingen.liu": "lingen.liu@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/PandaHTTP.git",
+    "git": "https://github.com/openpandaOrg/PandaHTTP.git",
     "tag": "0.1.0"
   },
   "platforms": {

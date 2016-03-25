@@ -28,7 +28,7 @@
  *  @param timeout     超时时间
  *  @param resultBlock 回调结果
  */
--(void)asyncRequestDelete:(OPHRequest*)request resultBlock:(void (^)(OPHResponse* response))resultBlock;
+-(void)asyncRequest:(OPHRequest*)request resultBlock:(void (^)(OPHResponse* response))resultBlock;
 
 
 

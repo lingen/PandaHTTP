@@ -1,817 +1,2009 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		032716AE715D8AD23DDC4F563328C8FB /* OPHResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7C38435CB02CB7CD615A8D55643E7C /* OPHResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E3D9F6AD71950A8AE9EC51046920234 /* NSData+OPH.m in Sources */ = {isa = PBXBuildFile; fileRef = C07AD154E71777921AE5936ADA81A102 /* NSData+OPH.m */; };
-		10DCF6C741D2A421BC03B99F247BC8D6 /* PandaHTTP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7DDFFB2A60567D727EC880E63F0508C /* PandaHTTP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2546D5613E8091430BCA7D360819B153 /* OPHResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2E94ED6D5763F65FDC23DFE8DA427F /* OPHResponse.m */; };
-		28115A7BC34C28297A932C02E33CA8F0 /* OPHRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F865C6EA18615820FC6F6132963342 /* OPHRequest.m */; };
-		39701E3B5CC2B6D3353BFF4CFAA25F98 /* OPHJsonStatusResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 359880AACAD03CC5D4E55DD5A05DDD0C /* OPHJsonStatusResult.m */; };
-		39EBF1F4FBDCC4351AA3D554DD34D6DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		3A13B35A30BA8459E8A9739BB1706304 /* Pods-PandaHTTP_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E100377B6B1B6C800E41EB639A84F508 /* Pods-PandaHTTP_Tests-dummy.m */; };
-		6BE9E92F0CFEAC57CC0A7289BDB78EB8 /* PandaHTTP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD95C0F7B5B690C5AF7FED80FF83810A /* PandaHTTP-dummy.m */; };
-		6F6A8FA4A5873C15225AC6058ED79916 /* OPHNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = C8631C107BDB128ABBFC81DB477E4EC1 /* OPHNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8299C6B7B2EA02E2C2DBF55AF1847B07 /* OPHJsonStatusResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD32C5B103794E9B06DDCAE70185B00 /* OPHJsonStatusResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88A5E072C7F87D7EBE98401D048410E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		8D9022308916F56C18D641E38BCDDDA5 /* Pods-PandaHTTP_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D4774F787B5D30DF654975A92E24D1 /* Pods-PandaHTTP_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A3A4E394B4DBBF69DB0AA25C2ADB4D3 /* NSData+OPH.h in Headers */ = {isa = PBXBuildFile; fileRef = 70274883664430DB2BB1D5E395C70E74 /* NSData+OPH.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7AE4602451B86EF28AE8FE2066B204E /* OPHNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC117664B077DF0561C7CA0DDF4A620 /* OPHNetwork.m */; };
-		AAED1A9DF9A22168E682713F3CC0B703 /* OPHRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ADA1D3ED2471F3F1F5C8C0565243F62 /* OPHRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC7327AF762237A488219915E696530F /* Pods-PandaHTTP_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 452E55CF0F0ED3C8966027377B833696 /* Pods-PandaHTTP_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C094FD99B3DEBBDA9373EE7D4CEFE1F2 /* OPH.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE98EAC27F948B454CCB0BCA2084F9E /* OPH.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC2EC3D0ACF356A415395CF2BBC5BDB1 /* PandaHTTP.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C6F8FCFB12070D62CDBCD31889D4933 /* PandaHTTP.bundle */; };
-		DD319532FFFBA0E26DFA278CBF8C763C /* Pods-PandaHTTP_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E574D231537CD03BCB564FF1129F5A6F /* Pods-PandaHTTP_Example-dummy.m */; };
-		FA81E958E7122678AD1EA8100B648956 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1482F3C1974256BDF718C4253B4F4343 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A6720D1466DD3334234CD34F2E7B9EFA;
-			remoteInfo = PandaHTTP;
-		};
-		3EAA372589964EBB727C7C4F0DA3B0BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A6720D1466DD3334234CD34F2E7B9EFA;
-			remoteInfo = PandaHTTP;
-		};
-		E82D8921E2B8E3DDE8B238CB39C88386 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CF3E2C2344D590157DB0A9F0DE1F84E3;
-			remoteInfo = "PandaHTTP-PandaHTTP";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		086A6AEF97C79332539F3603A5E425CA /* PandaHTTP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PandaHTTP-prefix.pch"; sourceTree = "<group>"; };
-		0EC632CE9CB5C280DD5DAC4432F8F32E /* PandaHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PandaHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C6F8FCFB12070D62CDBCD31889D4933 /* PandaHTTP.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaHTTP.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D4AC45F99BB2A598A3ED9D0F80C2D55 /* Pods-PandaHTTP_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PandaHTTP_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2AD32C5B103794E9B06DDCAE70185B00 /* OPHJsonStatusResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPHJsonStatusResult.h; sourceTree = "<group>"; };
-		301414C6F9103FA92F834A9E395EC1F6 /* Pods-PandaHTTP_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaHTTP_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		359880AACAD03CC5D4E55DD5A05DDD0C /* OPHJsonStatusResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPHJsonStatusResult.m; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		452E55CF0F0ED3C8966027377B833696 /* Pods-PandaHTTP_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PandaHTTP_Example-umbrella.h"; sourceTree = "<group>"; };
-		49D4774F787B5D30DF654975A92E24D1 /* Pods-PandaHTTP_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PandaHTTP_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4ADA1D3ED2471F3F1F5C8C0565243F62 /* OPHRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPHRequest.h; sourceTree = "<group>"; };
-		4D7C38435CB02CB7CD615A8D55643E7C /* OPHResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPHResponse.h; sourceTree = "<group>"; };
-		60BBEEB6D29D46F17EB7960FEF84E84B /* PandaHTTP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PandaHTTP.modulemap; sourceTree = "<group>"; };
-		60D34D9120EEA8FBE2FCD68B6FFAEBAA /* Pods-PandaHTTP_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaHTTP_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6DA027D69327155F889CF28650CF52CB /* Pods-PandaHTTP_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaHTTP_Example.release.xcconfig"; sourceTree = "<group>"; };
-		70274883664430DB2BB1D5E395C70E74 /* NSData+OPH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+OPH.h"; sourceTree = "<group>"; };
-		77F865C6EA18615820FC6F6132963342 /* OPHRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPHRequest.m; sourceTree = "<group>"; };
-		7EDA356F52FE260C0924238E1B393856 /* Pods-PandaHTTP_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaHTTP_Example-resources.sh"; sourceTree = "<group>"; };
-		7FC117664B077DF0561C7CA0DDF4A620 /* OPHNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPHNetwork.m; sourceTree = "<group>"; };
-		96659F13BFDF636523AFFA72748987EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D51CE4A35F3617805225364DB82DA6E /* PandaHTTP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PandaHTTP.xcconfig; sourceTree = "<group>"; };
-		A523D22560B2F2A3385DD7CB867F5CD5 /* Pods-PandaHTTP_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PandaHTTP_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A6CC6A67447FDFBF787922079628EC99 /* Pods-PandaHTTP_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaHTTP_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A8B5FF1FB7F7CC6AD404F06243B5481B /* Pods_PandaHTTP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaHTTP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC222ABE8AFD61E7CFC7953CC787457E /* Pods-PandaHTTP_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaHTTP_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AC2E94ED6D5763F65FDC23DFE8DA427F /* OPHResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPHResponse.m; sourceTree = "<group>"; };
-		AD95C0F7B5B690C5AF7FED80FF83810A /* PandaHTTP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PandaHTTP-dummy.m"; sourceTree = "<group>"; };
-		B5A8CD8BB488DF2DCB9029D01BBDFC8A /* Pods-PandaHTTP_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PandaHTTP_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B644B2874FF2763B31F82131D1959013 /* Pods-PandaHTTP_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PandaHTTP_Tests.modulemap"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C07AD154E71777921AE5936ADA81A102 /* NSData+OPH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+OPH.m"; sourceTree = "<group>"; };
-		C8631C107BDB128ABBFC81DB477E4EC1 /* OPHNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPHNetwork.h; sourceTree = "<group>"; };
-		CAE98EAC27F948B454CCB0BCA2084F9E /* OPH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPH.h; sourceTree = "<group>"; };
-		CC128C1E2BB2D6DA4AE869FD67D683EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCA34884557E0AE4E6F300C5D49BB96E /* Pods_PandaHTTP_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaHTTP_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D18A6ADE1F2BB2AC2325D6DE62BA773C /* Pods-PandaHTTP_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PandaHTTP_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E100377B6B1B6C800E41EB639A84F508 /* Pods-PandaHTTP_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PandaHTTP_Tests-dummy.m"; sourceTree = "<group>"; };
-		E574D231537CD03BCB564FF1129F5A6F /* Pods-PandaHTTP_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PandaHTTP_Example-dummy.m"; sourceTree = "<group>"; };
-		E7DDFFB2A60567D727EC880E63F0508C /* PandaHTTP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PandaHTTP-umbrella.h"; sourceTree = "<group>"; };
-		EE1E9353418790FC47EA58B46A4E3C63 /* Pods-PandaHTTP_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaHTTP_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F5A3BE1ED5880C87A3D0CAA94DF5CA91 /* Pods-PandaHTTP_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaHTTP_Tests-resources.sh"; sourceTree = "<group>"; };
-		F84F35E7C5339A7DBDB81C5D1612E188 /* Pods-PandaHTTP_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PandaHTTP_Example.modulemap"; sourceTree = "<group>"; };
-		FCC52A76AEF9E437365656BFC66E9ECA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		316C8F82D652EC1BEE68228214712D72 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA81E958E7122678AD1EA8100B648956 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		385B4E3A3F58F28533D8D262DC8367AA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				39EBF1F4FBDCC4351AA3D554DD34D6DD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E1C36D054780FFD06FF45ED3A77A4C6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88A5E072C7F87D7EBE98401D048410E5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA58A770E2018DD6F99A582F7F9A868D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		06E6FF2C3DD8720E009BFF2739D37014 /* Pods-PandaHTTP_Example */ = {
-			isa = PBXGroup;
-			children = (
-				96659F13BFDF636523AFFA72748987EC /* Info.plist */,
-				F84F35E7C5339A7DBDB81C5D1612E188 /* Pods-PandaHTTP_Example.modulemap */,
-				B5A8CD8BB488DF2DCB9029D01BBDFC8A /* Pods-PandaHTTP_Example-acknowledgements.markdown */,
-				1D4AC45F99BB2A598A3ED9D0F80C2D55 /* Pods-PandaHTTP_Example-acknowledgements.plist */,
-				E574D231537CD03BCB564FF1129F5A6F /* Pods-PandaHTTP_Example-dummy.m */,
-				A6CC6A67447FDFBF787922079628EC99 /* Pods-PandaHTTP_Example-frameworks.sh */,
-				7EDA356F52FE260C0924238E1B393856 /* Pods-PandaHTTP_Example-resources.sh */,
-				452E55CF0F0ED3C8966027377B833696 /* Pods-PandaHTTP_Example-umbrella.h */,
-				AC222ABE8AFD61E7CFC7953CC787457E /* Pods-PandaHTTP_Example.debug.xcconfig */,
-				6DA027D69327155F889CF28650CF52CB /* Pods-PandaHTTP_Example.release.xcconfig */,
-			);
-			name = "Pods-PandaHTTP_Example";
-			path = "Target Support Files/Pods-PandaHTTP_Example";
-			sourceTree = "<group>";
-		};
-		20B774937BB717D24DB539B5124B51B4 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DDD9E1FABD280A923A6221447C9B3776 /* PandaHTTP */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		5696D8F29B90E45AE7F57885B8AA6C53 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B4A8D9467352D09AF060373C0D27A060 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		6EDACC97211AEFAEE022E8F5F28312B5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1C6F8FCFB12070D62CDBCD31889D4933 /* PandaHTTP.bundle */,
-				0EC632CE9CB5C280DD5DAC4432F8F32E /* PandaHTTP.framework */,
-				CCA34884557E0AE4E6F300C5D49BB96E /* Pods_PandaHTTP_Example.framework */,
-				A8B5FF1FB7F7CC6AD404F06243B5481B /* Pods_PandaHTTP_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				20B774937BB717D24DB539B5124B51B4 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6EDACC97211AEFAEE022E8F5F28312B5 /* Products */,
-				CD517BDBDA0086CD59D320880CC98FB5 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		99056C4BFA7B86CE4985B8D0A59D39EC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CC128C1E2BB2D6DA4AE869FD67D683EC /* Info.plist */,
-				60BBEEB6D29D46F17EB7960FEF84E84B /* PandaHTTP.modulemap */,
-				9D51CE4A35F3617805225364DB82DA6E /* PandaHTTP.xcconfig */,
-				AD95C0F7B5B690C5AF7FED80FF83810A /* PandaHTTP-dummy.m */,
-				086A6AEF97C79332539F3603A5E425CA /* PandaHTTP-prefix.pch */,
-				E7DDFFB2A60567D727EC880E63F0508C /* PandaHTTP-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PandaHTTP";
-			sourceTree = "<group>";
-		};
-		A4E089F88688F72E8F53B27C9107E45A /* Pods-PandaHTTP_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				FCC52A76AEF9E437365656BFC66E9ECA /* Info.plist */,
-				B644B2874FF2763B31F82131D1959013 /* Pods-PandaHTTP_Tests.modulemap */,
-				D18A6ADE1F2BB2AC2325D6DE62BA773C /* Pods-PandaHTTP_Tests-acknowledgements.markdown */,
-				A523D22560B2F2A3385DD7CB867F5CD5 /* Pods-PandaHTTP_Tests-acknowledgements.plist */,
-				E100377B6B1B6C800E41EB639A84F508 /* Pods-PandaHTTP_Tests-dummy.m */,
-				EE1E9353418790FC47EA58B46A4E3C63 /* Pods-PandaHTTP_Tests-frameworks.sh */,
-				F5A3BE1ED5880C87A3D0CAA94DF5CA91 /* Pods-PandaHTTP_Tests-resources.sh */,
-				49D4774F787B5D30DF654975A92E24D1 /* Pods-PandaHTTP_Tests-umbrella.h */,
-				301414C6F9103FA92F834A9E395EC1F6 /* Pods-PandaHTTP_Tests.debug.xcconfig */,
-				60D34D9120EEA8FBE2FCD68B6FFAEBAA /* Pods-PandaHTTP_Tests.release.xcconfig */,
-			);
-			name = "Pods-PandaHTTP_Tests";
-			path = "Target Support Files/Pods-PandaHTTP_Tests";
-			sourceTree = "<group>";
-		};
-		B4A8D9467352D09AF060373C0D27A060 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CAE98EAC27F948B454CCB0BCA2084F9E /* OPH.h */,
-				4ADA1D3ED2471F3F1F5C8C0565243F62 /* OPHRequest.h */,
-				77F865C6EA18615820FC6F6132963342 /* OPHRequest.m */,
-				4D7C38435CB02CB7CD615A8D55643E7C /* OPHResponse.h */,
-				AC2E94ED6D5763F65FDC23DFE8DA427F /* OPHResponse.m */,
-				C8631C107BDB128ABBFC81DB477E4EC1 /* OPHNetwork.h */,
-				7FC117664B077DF0561C7CA0DDF4A620 /* OPHNetwork.m */,
-				70274883664430DB2BB1D5E395C70E74 /* NSData+OPH.h */,
-				C07AD154E71777921AE5936ADA81A102 /* NSData+OPH.m */,
-				2AD32C5B103794E9B06DDCAE70185B00 /* OPHJsonStatusResult.h */,
-				359880AACAD03CC5D4E55DD5A05DDD0C /* OPHJsonStatusResult.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		CD517BDBDA0086CD59D320880CC98FB5 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				06E6FF2C3DD8720E009BFF2739D37014 /* Pods-PandaHTTP_Example */,
-				A4E089F88688F72E8F53B27C9107E45A /* Pods-PandaHTTP_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DDD9E1FABD280A923A6221447C9B3776 /* PandaHTTP */ = {
-			isa = PBXGroup;
-			children = (
-				5696D8F29B90E45AE7F57885B8AA6C53 /* Pod */,
-				99056C4BFA7B86CE4985B8D0A59D39EC /* Support Files */,
-			);
-			name = PandaHTTP;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		02B96FDD56914B7DB390145F1DD8C81B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A3A4E394B4DBBF69DB0AA25C2ADB4D3 /* NSData+OPH.h in Headers */,
-				C094FD99B3DEBBDA9373EE7D4CEFE1F2 /* OPH.h in Headers */,
-				8299C6B7B2EA02E2C2DBF55AF1847B07 /* OPHJsonStatusResult.h in Headers */,
-				6F6A8FA4A5873C15225AC6058ED79916 /* OPHNetwork.h in Headers */,
-				AAED1A9DF9A22168E682713F3CC0B703 /* OPHRequest.h in Headers */,
-				032716AE715D8AD23DDC4F563328C8FB /* OPHResponse.h in Headers */,
-				10DCF6C741D2A421BC03B99F247BC8D6 /* PandaHTTP-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		548192BBF8EF940856266081BF41CA3B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D9022308916F56C18D641E38BCDDDA5 /* Pods-PandaHTTP_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6652879AFEC595C1CA2F263E0BB349C8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC7327AF762237A488219915E696530F /* Pods-PandaHTTP_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		1656B718A33A2072D25C21428CA98014 /* Pods-PandaHTTP_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9EE65A19E566788C8E66346034496A2 /* Build configuration list for PBXNativeTarget "Pods-PandaHTTP_Example" */;
-			buildPhases = (
-				17C956F54F835DEF0365B44CF479B783 /* Sources */,
-				385B4E3A3F58F28533D8D262DC8367AA /* Frameworks */,
-				6652879AFEC595C1CA2F263E0BB349C8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A85A2033C2F7E38840CCA21591633A85 /* PBXTargetDependency */,
-			);
-			name = "Pods-PandaHTTP_Example";
-			productName = "Pods-PandaHTTP_Example";
-			productReference = CCA34884557E0AE4E6F300C5D49BB96E /* Pods_PandaHTTP_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		18AFAC8FA45F4A83806161FC470FD9EB /* Pods-PandaHTTP_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1C063EFBB01480441984FE740EA9B317 /* Build configuration list for PBXNativeTarget "Pods-PandaHTTP_Tests" */;
-			buildPhases = (
-				B34ABDBE4E610C43E6E4C68F974D87D1 /* Sources */,
-				5E1C36D054780FFD06FF45ED3A77A4C6 /* Frameworks */,
-				548192BBF8EF940856266081BF41CA3B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				71FF65D20B67FAC81DD877D16D867B4D /* PBXTargetDependency */,
-			);
-			name = "Pods-PandaHTTP_Tests";
-			productName = "Pods-PandaHTTP_Tests";
-			productReference = A8B5FF1FB7F7CC6AD404F06243B5481B /* Pods_PandaHTTP_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A6720D1466DD3334234CD34F2E7B9EFA /* PandaHTTP */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 74058437CF8F0C220724AEEE86B90CA4 /* Build configuration list for PBXNativeTarget "PandaHTTP" */;
-			buildPhases = (
-				C5A5D7D9624559154C4DEF7FE646D6A1 /* Sources */,
-				316C8F82D652EC1BEE68228214712D72 /* Frameworks */,
-				7147B5BF7C69BF1D32DA9D3448F96B51 /* Resources */,
-				02B96FDD56914B7DB390145F1DD8C81B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C412052FDC6678336AEC9CB7F286374C /* PBXTargetDependency */,
-			);
-			name = PandaHTTP;
-			productName = PandaHTTP;
-			productReference = 0EC632CE9CB5C280DD5DAC4432F8F32E /* PandaHTTP.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CF3E2C2344D590157DB0A9F0DE1F84E3 /* PandaHTTP-PandaHTTP */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 694A02375CC8E8E879D033498B981E1C /* Build configuration list for PBXNativeTarget "PandaHTTP-PandaHTTP" */;
-			buildPhases = (
-				7B57C4D935F92F988DED4F60B35ACB22 /* Sources */,
-				DA58A770E2018DD6F99A582F7F9A868D /* Frameworks */,
-				1A1949D39E71F826AAB5E402B820EA5E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "PandaHTTP-PandaHTTP";
-			productName = "PandaHTTP-PandaHTTP";
-			productReference = 1C6F8FCFB12070D62CDBCD31889D4933 /* PandaHTTP.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 6EDACC97211AEFAEE022E8F5F28312B5 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				A6720D1466DD3334234CD34F2E7B9EFA /* PandaHTTP */,
-				CF3E2C2344D590157DB0A9F0DE1F84E3 /* PandaHTTP-PandaHTTP */,
-				1656B718A33A2072D25C21428CA98014 /* Pods-PandaHTTP_Example */,
-				18AFAC8FA45F4A83806161FC470FD9EB /* Pods-PandaHTTP_Tests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		1A1949D39E71F826AAB5E402B820EA5E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7147B5BF7C69BF1D32DA9D3448F96B51 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC2EC3D0ACF356A415395CF2BBC5BDB1 /* PandaHTTP.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		17C956F54F835DEF0365B44CF479B783 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD319532FFFBA0E26DFA278CBF8C763C /* Pods-PandaHTTP_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B57C4D935F92F988DED4F60B35ACB22 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B34ABDBE4E610C43E6E4C68F974D87D1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A13B35A30BA8459E8A9739BB1706304 /* Pods-PandaHTTP_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5A5D7D9624559154C4DEF7FE646D6A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E3D9F6AD71950A8AE9EC51046920234 /* NSData+OPH.m in Sources */,
-				39701E3B5CC2B6D3353BFF4CFAA25F98 /* OPHJsonStatusResult.m in Sources */,
-				A7AE4602451B86EF28AE8FE2066B204E /* OPHNetwork.m in Sources */,
-				28115A7BC34C28297A932C02E33CA8F0 /* OPHRequest.m in Sources */,
-				2546D5613E8091430BCA7D360819B153 /* OPHResponse.m in Sources */,
-				6BE9E92F0CFEAC57CC0A7289BDB78EB8 /* PandaHTTP-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		71FF65D20B67FAC81DD877D16D867B4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PandaHTTP;
-			target = A6720D1466DD3334234CD34F2E7B9EFA /* PandaHTTP */;
-			targetProxy = 3EAA372589964EBB727C7C4F0DA3B0BC /* PBXContainerItemProxy */;
-		};
-		A85A2033C2F7E38840CCA21591633A85 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PandaHTTP;
-			target = A6720D1466DD3334234CD34F2E7B9EFA /* PandaHTTP */;
-			targetProxy = 1482F3C1974256BDF718C4253B4F4343 /* PBXContainerItemProxy */;
-		};
-		C412052FDC6678336AEC9CB7F286374C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PandaHTTP-PandaHTTP";
-			target = CF3E2C2344D590157DB0A9F0DE1F84E3 /* PandaHTTP-PandaHTTP */;
-			targetProxy = E82D8921E2B8E3DDE8B238CB39C88386 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		086AA0586AFBE85167868D06807A4367 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D51CE4A35F3617805225364DB82DA6E /* PandaHTTP.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PandaHTTP/PandaHTTP-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PandaHTTP/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PandaHTTP/PandaHTTP.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PandaHTTP;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		2D4FE2498E33FE04EA55353421B77BE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D51CE4A35F3617805225364DB82DA6E /* PandaHTTP.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PandaHTTP/PandaHTTP-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PandaHTTP/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PandaHTTP/PandaHTTP.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PandaHTTP;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5111B008C1E06591BE9AA126BBC0C223 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D51CE4A35F3617805225364DB82DA6E /* PandaHTTP.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PandaHTTP;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		72DB658FD6A6C979762E5B2327181BB7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60D34D9120EEA8FBE2FCD68B6FFAEBAA /* Pods-PandaHTTP_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PandaHTTP_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PandaHTTP_Tests/Pods-PandaHTTP_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PandaHTTP_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		789FB02565B1E6419D004D15FAD20B2E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D51CE4A35F3617805225364DB82DA6E /* PandaHTTP.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PandaHTTP;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		A7E114573F117D2CAD55CF4D3DA848B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 301414C6F9103FA92F834A9E395EC1F6 /* Pods-PandaHTTP_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PandaHTTP_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PandaHTTP_Tests/Pods-PandaHTTP_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PandaHTTP_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E71E6C81C7314DB6D0D2B8FCE2198DF7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DA027D69327155F889CF28650CF52CB /* Pods-PandaHTTP_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PandaHTTP_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PandaHTTP_Example/Pods-PandaHTTP_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PandaHTTP_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EFD9114C4080892994641EAAF7E2D162 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC222ABE8AFD61E7CFC7953CC787457E /* Pods-PandaHTTP_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PandaHTTP_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PandaHTTP_Example/Pods-PandaHTTP_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PandaHTTP_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		1C063EFBB01480441984FE740EA9B317 /* Build configuration list for PBXNativeTarget "Pods-PandaHTTP_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7E114573F117D2CAD55CF4D3DA848B6 /* Debug */,
-				72DB658FD6A6C979762E5B2327181BB7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
-				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		694A02375CC8E8E879D033498B981E1C /* Build configuration list for PBXNativeTarget "PandaHTTP-PandaHTTP" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5111B008C1E06591BE9AA126BBC0C223 /* Debug */,
-				789FB02565B1E6419D004D15FAD20B2E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		74058437CF8F0C220724AEEE86B90CA4 /* Build configuration list for PBXNativeTarget "PandaHTTP" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2D4FE2498E33FE04EA55353421B77BE4 /* Debug */,
-				086AA0586AFBE85167868D06807A4367 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E9EE65A19E566788C8E66346034496A2 /* Build configuration list for PBXNativeTarget "Pods-PandaHTTP_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EFD9114C4080892994641EAAF7E2D162 /* Debug */,
-				E71E6C81C7314DB6D0D2B8FCE2198DF7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>02B96FDD56914B7DB390145F1DD8C81B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9A3A4E394B4DBBF69DB0AA25C2ADB4D3</string>
+				<string>C094FD99B3DEBBDA9373EE7D4CEFE1F2</string>
+				<string>8299C6B7B2EA02E2C2DBF55AF1847B07</string>
+				<string>6F6A8FA4A5873C15225AC6058ED79916</string>
+				<string>AAED1A9DF9A22168E682713F3CC0B703</string>
+				<string>032716AE715D8AD23DDC4F563328C8FB</string>
+				<string>10DCF6C741D2A421BC03B99F247BC8D6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>032716AE715D8AD23DDC4F563328C8FB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D7C38435CB02CB7CD615A8D55643E7C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>03CA91998D6773EC5D02B3DB87B8353E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>06E6FF2C3DD8720E009BFF2739D37014</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>96659F13BFDF636523AFFA72748987EC</string>
+				<string>F84F35E7C5339A7DBDB81C5D1612E188</string>
+				<string>B5A8CD8BB488DF2DCB9029D01BBDFC8A</string>
+				<string>1D4AC45F99BB2A598A3ED9D0F80C2D55</string>
+				<string>E574D231537CD03BCB564FF1129F5A6F</string>
+				<string>A6CC6A67447FDFBF787922079628EC99</string>
+				<string>7EDA356F52FE260C0924238E1B393856</string>
+				<string>452E55CF0F0ED3C8966027377B833696</string>
+				<string>AC222ABE8AFD61E7CFC7953CC787457E</string>
+				<string>6DA027D69327155F889CF28650CF52CB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-PandaHTTP_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-PandaHTTP_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>086A6AEF97C79332539F3603A5E425CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PandaHTTP-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>086AA0586AFBE85167868D06807A4367</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9D51CE4A35F3617805225364DB82DA6E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/PandaHTTP/PandaHTTP-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/PandaHTTP/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/PandaHTTP/PandaHTTP.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>PandaHTTP</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>0B57334D6C23DADAA4F7D802A5760EB2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>0E3D9F6AD71950A8AE9EC51046920234</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C07AD154E71777921AE5936ADA81A102</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0EC632CE9CB5C280DD5DAC4432F8F32E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>PandaHTTP.framework</string>
+			<key>path</key>
+			<string>PandaHTTP.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>10DCF6C741D2A421BC03B99F247BC8D6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E7DDFFB2A60567D727EC880E63F0508C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1482F3C1974256BDF718C4253B4F4343</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>A6720D1466DD3334234CD34F2E7B9EFA</string>
+			<key>remoteInfo</key>
+			<string>PandaHTTP</string>
+		</dict>
+		<key>1656B718A33A2072D25C21428CA98014</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E9EE65A19E566788C8E66346034496A2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>17C956F54F835DEF0365B44CF479B783</string>
+				<string>385B4E3A3F58F28533D8D262DC8367AA</string>
+				<string>6652879AFEC595C1CA2F263E0BB349C8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>A85A2033C2F7E38840CCA21591633A85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-PandaHTTP_Example</string>
+			<key>productName</key>
+			<string>Pods-PandaHTTP_Example</string>
+			<key>productReference</key>
+			<string>CCA34884557E0AE4E6F300C5D49BB96E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>17C956F54F835DEF0365B44CF479B783</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DD319532FFFBA0E26DFA278CBF8C763C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>18AFAC8FA45F4A83806161FC470FD9EB</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>1C063EFBB01480441984FE740EA9B317</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B34ABDBE4E610C43E6E4C68F974D87D1</string>
+				<string>5E1C36D054780FFD06FF45ED3A77A4C6</string>
+				<string>548192BBF8EF940856266081BF41CA3B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>71FF65D20B67FAC81DD877D16D867B4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-PandaHTTP_Tests</string>
+			<key>productName</key>
+			<string>Pods-PandaHTTP_Tests</string>
+			<key>productReference</key>
+			<string>A8B5FF1FB7F7CC6AD404F06243B5481B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>1A1949D39E71F826AAB5E402B820EA5E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1C063EFBB01480441984FE740EA9B317</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A7E114573F117D2CAD55CF4D3DA848B6</string>
+				<string>72DB658FD6A6C979762E5B2327181BB7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>1C6F8FCFB12070D62CDBCD31889D4933</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>PandaHTTP.bundle</string>
+			<key>path</key>
+			<string>PandaHTTP.bundle</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1D4AC45F99BB2A598A3ED9D0F80C2D55</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>20B774937BB717D24DB539B5124B51B4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DDD9E1FABD280A923A6221447C9B3776</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2546D5613E8091430BCA7D360819B153</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AC2E94ED6D5763F65FDC23DFE8DA427F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>28115A7BC34C28297A932C02E33CA8F0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>77F865C6EA18615820FC6F6132963342</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2AD32C5B103794E9B06DDCAE70185B00</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OPHJsonStatusResult.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D4FE2498E33FE04EA55353421B77BE4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9D51CE4A35F3617805225364DB82DA6E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/PandaHTTP/PandaHTTP-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/PandaHTTP/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/PandaHTTP/PandaHTTP.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>PandaHTTP</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0B57334D6C23DADAA4F7D802A5760EB2</string>
+				<string>03CA91998D6773EC5D02B3DB87B8353E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>301414C6F9103FA92F834A9E395EC1F6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>316C8F82D652EC1BEE68228214712D72</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FA81E958E7122678AD1EA8100B648956</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>359880AACAD03CC5D4E55DD5A05DDD0C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OPHJsonStatusResult.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>385B4E3A3F58F28533D8D262DC8367AA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>39EBF1F4FBDCC4351AA3D554DD34D6DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>39701E3B5CC2B6D3353BFF4CFAA25F98</key>
+		<dict>
+			<key>fileRef</key>
+			<string>359880AACAD03CC5D4E55DD5A05DDD0C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>39EBF1F4FBDCC4351AA3D554DD34D6DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3A13B35A30BA8459E8A9739BB1706304</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E100377B6B1B6C800E41EB639A84F508</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3E4E89230EF59BC255123B67864ACF77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>3EAA372589964EBB727C7C4F0DA3B0BC</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>A6720D1466DD3334234CD34F2E7B9EFA</string>
+			<key>remoteInfo</key>
+			<string>PandaHTTP</string>
+		</dict>
+		<key>452E55CF0F0ED3C8966027377B833696</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Example-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>49D4774F787B5D30DF654975A92E24D1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Tests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4ADA1D3ED2471F3F1F5C8C0565243F62</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OPHRequest.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7C38435CB02CB7CD615A8D55643E7C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OPHResponse.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5111B008C1E06591BE9AA126BBC0C223</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9D51CE4A35F3617805225364DB82DA6E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>PandaHTTP</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>548192BBF8EF940856266081BF41CA3B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8D9022308916F56C18D641E38BCDDDA5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5696D8F29B90E45AE7F57885B8AA6C53</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B4A8D9467352D09AF060373C0D27A060</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pod</string>
+			<key>path</key>
+			<string>Pod</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5E1C36D054780FFD06FF45ED3A77A4C6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88A5E072C7F87D7EBE98401D048410E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>60BBEEB6D29D46F17EB7960FEF84E84B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>PandaHTTP.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>60D34D9120EEA8FBE2FCD68B6FFAEBAA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6652879AFEC595C1CA2F263E0BB349C8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AC7327AF762237A488219915E696530F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>694A02375CC8E8E879D033498B981E1C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5111B008C1E06591BE9AA126BBC0C223</string>
+				<string>789FB02565B1E6419D004D15FAD20B2E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6BE9E92F0CFEAC57CC0A7289BDB78EB8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD95C0F7B5B690C5AF7FED80FF83810A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DA027D69327155F889CF28650CF52CB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6EDACC97211AEFAEE022E8F5F28312B5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1C6F8FCFB12070D62CDBCD31889D4933</string>
+				<string>0EC632CE9CB5C280DD5DAC4432F8F32E</string>
+				<string>CCA34884557E0AE4E6F300C5D49BB96E</string>
+				<string>A8B5FF1FB7F7CC6AD404F06243B5481B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F6A8FA4A5873C15225AC6058ED79916</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C8631C107BDB128ABBFC81DB477E4EC1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>70274883664430DB2BB1D5E395C70E74</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSData+OPH.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7147B5BF7C69BF1D32DA9D3448F96B51</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CC2EC3D0ACF356A415395CF2BBC5BDB1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>71FF65D20B67FAC81DD877D16D867B4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>PandaHTTP</string>
+			<key>target</key>
+			<string>A6720D1466DD3334234CD34F2E7B9EFA</string>
+			<key>targetProxy</key>
+			<string>3EAA372589964EBB727C7C4F0DA3B0BC</string>
+		</dict>
+		<key>72DB658FD6A6C979762E5B2327181BB7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>60D34D9120EEA8FBE2FCD68B6FFAEBAA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-PandaHTTP_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-PandaHTTP_Tests/Pods-PandaHTTP_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_PandaHTTP_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>74058437CF8F0C220724AEEE86B90CA4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2D4FE2498E33FE04EA55353421B77BE4</string>
+				<string>086AA0586AFBE85167868D06807A4367</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>77F865C6EA18615820FC6F6132963342</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OPHRequest.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>789FB02565B1E6419D004D15FAD20B2E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9D51CE4A35F3617805225364DB82DA6E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>PandaHTTP</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7B57C4D935F92F988DED4F60B35ACB22</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>20B774937BB717D24DB539B5124B51B4</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>6EDACC97211AEFAEE022E8F5F28312B5</string>
+				<string>CD517BDBDA0086CD59D320880CC98FB5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7EDA356F52FE260C0924238E1B393856</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FC117664B077DF0561C7CA0DDF4A620</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OPHNetwork.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8299C6B7B2EA02E2C2DBF55AF1847B07</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2AD32C5B103794E9B06DDCAE70185B00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>88A5E072C7F87D7EBE98401D048410E5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8D9022308916F56C18D641E38BCDDDA5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>49D4774F787B5D30DF654975A92E24D1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>96659F13BFDF636523AFFA72748987EC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99056C4BFA7B86CE4985B8D0A59D39EC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CC128C1E2BB2D6DA4AE869FD67D683EC</string>
+				<string>60BBEEB6D29D46F17EB7960FEF84E84B</string>
+				<string>9D51CE4A35F3617805225364DB82DA6E</string>
+				<string>AD95C0F7B5B690C5AF7FED80FF83810A</string>
+				<string>086A6AEF97C79332539F3603A5E425CA</string>
+				<string>E7DDFFB2A60567D727EC880E63F0508C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/PandaHTTP</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9A3A4E394B4DBBF69DB0AA25C2ADB4D3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>70274883664430DB2BB1D5E395C70E74</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9D51CE4A35F3617805225364DB82DA6E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>PandaHTTP.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A4E089F88688F72E8F53B27C9107E45A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FCC52A76AEF9E437365656BFC66E9ECA</string>
+				<string>B644B2874FF2763B31F82131D1959013</string>
+				<string>D18A6ADE1F2BB2AC2325D6DE62BA773C</string>
+				<string>A523D22560B2F2A3385DD7CB867F5CD5</string>
+				<string>E100377B6B1B6C800E41EB639A84F508</string>
+				<string>EE1E9353418790FC47EA58B46A4E3C63</string>
+				<string>F5A3BE1ED5880C87A3D0CAA94DF5CA91</string>
+				<string>49D4774F787B5D30DF654975A92E24D1</string>
+				<string>301414C6F9103FA92F834A9E395EC1F6</string>
+				<string>60D34D9120EEA8FBE2FCD68B6FFAEBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-PandaHTTP_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-PandaHTTP_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A523D22560B2F2A3385DD7CB867F5CD5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A6720D1466DD3334234CD34F2E7B9EFA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>74058437CF8F0C220724AEEE86B90CA4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C5A5D7D9624559154C4DEF7FE646D6A1</string>
+				<string>316C8F82D652EC1BEE68228214712D72</string>
+				<string>7147B5BF7C69BF1D32DA9D3448F96B51</string>
+				<string>02B96FDD56914B7DB390145F1DD8C81B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C412052FDC6678336AEC9CB7F286374C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PandaHTTP</string>
+			<key>productName</key>
+			<string>PandaHTTP</string>
+			<key>productReference</key>
+			<string>0EC632CE9CB5C280DD5DAC4432F8F32E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>A6CC6A67447FDFBF787922079628EC99</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7AE4602451B86EF28AE8FE2066B204E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7FC117664B077DF0561C7CA0DDF4A620</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A7E114573F117D2CAD55CF4D3DA848B6</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>301414C6F9103FA92F834A9E395EC1F6</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-PandaHTTP_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-PandaHTTP_Tests/Pods-PandaHTTP_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_PandaHTTP_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>A85A2033C2F7E38840CCA21591633A85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>PandaHTTP</string>
+			<key>target</key>
+			<string>A6720D1466DD3334234CD34F2E7B9EFA</string>
+			<key>targetProxy</key>
+			<string>1482F3C1974256BDF718C4253B4F4343</string>
+		</dict>
+		<key>A8B5FF1FB7F7CC6AD404F06243B5481B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_PandaHTTP_Tests.framework</string>
+			<key>path</key>
+			<string>Pods_PandaHTTP_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AAED1A9DF9A22168E682713F3CC0B703</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4ADA1D3ED2471F3F1F5C8C0565243F62</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>AC222ABE8AFD61E7CFC7953CC787457E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AC2E94ED6D5763F65FDC23DFE8DA427F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OPHResponse.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AC7327AF762237A488219915E696530F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>452E55CF0F0ED3C8966027377B833696</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>AD95C0F7B5B690C5AF7FED80FF83810A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PandaHTTP-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B34ABDBE4E610C43E6E4C68F974D87D1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3A13B35A30BA8459E8A9739BB1706304</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B4A8D9467352D09AF060373C0D27A060</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>70274883664430DB2BB1D5E395C70E74</string>
+				<string>C07AD154E71777921AE5936ADA81A102</string>
+				<string>CAE98EAC27F948B454CCB0BCA2084F9E</string>
+				<string>2AD32C5B103794E9B06DDCAE70185B00</string>
+				<string>359880AACAD03CC5D4E55DD5A05DDD0C</string>
+				<string>C8631C107BDB128ABBFC81DB477E4EC1</string>
+				<string>7FC117664B077DF0561C7CA0DDF4A620</string>
+				<string>4ADA1D3ED2471F3F1F5C8C0565243F62</string>
+				<string>77F865C6EA18615820FC6F6132963342</string>
+				<string>4D7C38435CB02CB7CD615A8D55643E7C</string>
+				<string>AC2E94ED6D5763F65FDC23DFE8DA427F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B5A8CD8BB488DF2DCB9029D01BBDFC8A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B644B2874FF2763B31F82131D1959013</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Tests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E4E89230EF59BC255123B67864ACF77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C07AD154E71777921AE5936ADA81A102</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSData+OPH.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C094FD99B3DEBBDA9373EE7D4CEFE1F2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAE98EAC27F948B454CCB0BCA2084F9E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C412052FDC6678336AEC9CB7F286374C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>PandaHTTP-PandaHTTP</string>
+			<key>target</key>
+			<string>CF3E2C2344D590157DB0A9F0DE1F84E3</string>
+			<key>targetProxy</key>
+			<string>E82D8921E2B8E3DDE8B238CB39C88386</string>
+		</dict>
+		<key>C5A5D7D9624559154C4DEF7FE646D6A1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0E3D9F6AD71950A8AE9EC51046920234</string>
+				<string>39701E3B5CC2B6D3353BFF4CFAA25F98</string>
+				<string>A7AE4602451B86EF28AE8FE2066B204E</string>
+				<string>28115A7BC34C28297A932C02E33CA8F0</string>
+				<string>2546D5613E8091430BCA7D360819B153</string>
+				<string>6BE9E92F0CFEAC57CC0A7289BDB78EB8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C8631C107BDB128ABBFC81DB477E4EC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OPHNetwork.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAE98EAC27F948B454CCB0BCA2084F9E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OPH.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC128C1E2BB2D6DA4AE869FD67D683EC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC2EC3D0ACF356A415395CF2BBC5BDB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1C6F8FCFB12070D62CDBCD31889D4933</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CCA34884557E0AE4E6F300C5D49BB96E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_PandaHTTP_Example.framework</string>
+			<key>path</key>
+			<string>Pods_PandaHTTP_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CD517BDBDA0086CD59D320880CC98FB5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>06E6FF2C3DD8720E009BFF2739D37014</string>
+				<string>A4E089F88688F72E8F53B27C9107E45A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CF3E2C2344D590157DB0A9F0DE1F84E3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>694A02375CC8E8E879D033498B981E1C</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7B57C4D935F92F988DED4F60B35ACB22</string>
+				<string>DA58A770E2018DD6F99A582F7F9A868D</string>
+				<string>1A1949D39E71F826AAB5E402B820EA5E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PandaHTTP-PandaHTTP</string>
+			<key>productName</key>
+			<string>PandaHTTP-PandaHTTP</string>
+			<key>productReference</key>
+			<string>1C6F8FCFB12070D62CDBCD31889D4933</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>D18A6ADE1F2BB2AC2325D6DE62BA773C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>6EDACC97211AEFAEE022E8F5F28312B5</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>A6720D1466DD3334234CD34F2E7B9EFA</string>
+				<string>CF3E2C2344D590157DB0A9F0DE1F84E3</string>
+				<string>1656B718A33A2072D25C21428CA98014</string>
+				<string>18AFAC8FA45F4A83806161FC470FD9EB</string>
+			</array>
+		</dict>
+		<key>DA58A770E2018DD6F99A582F7F9A868D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DD319532FFFBA0E26DFA278CBF8C763C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E574D231537CD03BCB564FF1129F5A6F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DDD9E1FABD280A923A6221447C9B3776</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5696D8F29B90E45AE7F57885B8AA6C53</string>
+				<string>99056C4BFA7B86CE4985B8D0A59D39EC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>PandaHTTP</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E100377B6B1B6C800E41EB639A84F508</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E574D231537CD03BCB564FF1129F5A6F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E71E6C81C7314DB6D0D2B8FCE2198DF7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6DA027D69327155F889CF28650CF52CB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-PandaHTTP_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-PandaHTTP_Example/Pods-PandaHTTP_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_PandaHTTP_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E7DDFFB2A60567D727EC880E63F0508C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PandaHTTP-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E82D8921E2B8E3DDE8B238CB39C88386</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>CF3E2C2344D590157DB0A9F0DE1F84E3</string>
+			<key>remoteInfo</key>
+			<string>PandaHTTP-PandaHTTP</string>
+		</dict>
+		<key>E9EE65A19E566788C8E66346034496A2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>EFD9114C4080892994641EAAF7E2D162</string>
+				<string>E71E6C81C7314DB6D0D2B8FCE2198DF7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>EE1E9353418790FC47EA58B46A4E3C63</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EFD9114C4080892994641EAAF7E2D162</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AC222ABE8AFD61E7CFC7953CC787457E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-PandaHTTP_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-PandaHTTP_Example/Pods-PandaHTTP_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_PandaHTTP_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F5A3BE1ED5880C87A3D0CAA94DF5CA91</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F84F35E7C5339A7DBDB81C5D1612E188</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-PandaHTTP_Example.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA81E958E7122678AD1EA8100B648956</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FCC52A76AEF9E437365656BFC66E9ECA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>
