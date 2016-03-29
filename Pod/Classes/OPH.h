@@ -13,5 +13,6 @@
 #import "OPHNetwork.h"
 #import "OPHRequest.h"
 #import "OPHJsonStatusResult.h"
+#import "NSError+OPH.h"
 
 #endif /* OPH_h */

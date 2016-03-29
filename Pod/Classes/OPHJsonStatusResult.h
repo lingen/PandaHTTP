@@ -27,5 +27,13 @@ static NSString* OPHJsonStatusResult_MESSAGE = @"message";
 
 @property (nonatomic,strong) NSDictionary* result;
 
+/**
+ *  业务上是否成功
+ *
+ *  @return 返回BOOL值
+ */
+-(BOOL)isResultSuccess;
+
+
 
 @end

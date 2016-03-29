@@ -19,7 +19,7 @@
 
 +(instancetype)sharedInstance;
 
--(OPHResponse*)syncRequestGet:(OPHRequest*)request;
+-(OPHResponse*)syncRequest:(OPHRequest*)request;
 
 /**
  *  异步请求

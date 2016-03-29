@@ -60,11 +60,14 @@
  *
  *  @return 返回实例
  */
-+(instancetype)errorStatusCodeResponse:(int)statusCode{
++(instancetype)errorStatusCodeResponse:(int)statusCode error:(NSError*)error{
 
     OPHResponse* response = [[OPHResponse alloc] init];
     response.statusCode = statusCode;
-    response.error = [NSError errorWithDomain:@"HTTP请求出错" code:OPH_SERVICE_ERROR userInfo:@{@"statusCode":@(statusCode)}];
+     response.error = error;
+     if (!error) {
+          response.error = [NSError errorWithDomain:@"HTTP请求出错" code:OPH_SERVICE_ERROR userInfo:@{@"statusCode":@(statusCode)}];
+     }
     return response;
 }
 

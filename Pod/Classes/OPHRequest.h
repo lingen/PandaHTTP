@@ -34,8 +34,6 @@ typedef NS_ENUM(NSInteger,OPHRequestType) {
 @property (nonatomic,strong) NSString* url;
 
 
--(NSString*) url;
-
 +(instancetype)jsonReqeust:(NSString*)url type:(OPHRequestType)type;
 
 +(instancetype)jsonReqeust:(NSString *)url type:(OPHRequestType)type params:(NSDictionary*)params;

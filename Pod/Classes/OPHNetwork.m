@@ -68,7 +68,7 @@ static NSString* JSON_CONTENT_TYPE = @"application/json";
 }
 
 
--(OPHResponse*)syncRequestGet:(OPHRequest*)request{
+-(OPHResponse*)syncRequest:(OPHRequest*)request{
     return [self p_syncRequest:request];
 }
 
@@ -80,11 +80,9 @@ static NSString* JSON_CONTENT_TYPE = @"application/json";
  *  @param resultBlock 回调结果
  */
 -(void)asyncRequest:(OPHRequest*)request resultBlock:(void (^)(OPHResponse* response))resultBlock{
-    
-    
-    __weak typeof (request) weakRequest = request;
+     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        OPHResponse* reponse = [self p_syncRequest:weakRequest];
+        OPHResponse* reponse = [self p_syncRequest:request];
         if (resultBlock) {
             resultBlock(reponse);
         }
@@ -118,10 +116,10 @@ static NSString* JSON_CONTENT_TYPE = @"application/json";
     NSError *error = nil;
     NSHTTPURLResponse* response = nil;
     NSData* reponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-    return [self p_getOPHJSONResponse:response reponseData:reponseData];
+     return [self p_getOPHJSONResponse:response reponseData:reponseData error:error];
 }
 
--(OPHResponse*)p_getOPHJSONResponse:(NSHTTPURLResponse*)response reponseData:(NSData*)reponseData{
+-(OPHResponse*)p_getOPHJSONResponse:(NSHTTPURLResponse*)response reponseData:(NSData*)reponseData error:(NSError*)error{
     int statuCode = (int)response.statusCode;
     
     OPHResponse* reponse  = nil;
@@ -129,7 +127,7 @@ static NSString* JSON_CONTENT_TYPE = @"application/json";
     if (statuCode == 200) {
         reponse = [OPHResponse okReponse:reponseData];
     }else{
-        reponse = [OPHResponse errorStatusCodeResponse:statuCode];
+        reponse = [OPHResponse errorStatusCodeResponse:statuCode error:error];
     }
     return reponse;
 }
@@ -159,7 +157,7 @@ static NSString* JSON_CONTENT_TYPE = @"application/json";
 -(void)p_checkMainThread{
     BOOL isMainThread = [NSThread isMainThread];
     if (isMainThread) {
-        [NSException raise:@"db main thread exception" format:@"DB Actions Not Allow in Main Thread"];
+        [NSException raise:@"Network main thread exception" format:@"Network Actions Not Allow in Main Thread"];
     }
 }
 

@@ -12,22 +12,22 @@
 /**
  *  HTTP错误
  */
-static int OPH_HTTP_ERROR = -1002;
+static int OPH_HTTP_ERROR = -9991002;
 
 /**
  *  业务服务错误
  */
-static int OPH_SERVICE_ERROR = - 1001;
+static int OPH_SERVICE_ERROR = - 9991001;
 
 /**
  *  数据格式错误
  */
-static int OPH_DATA_ERROR = -1003;
+static int OPH_DATA_ERROR = -9991003;
 
 /**
  *  超时错误
  */
-static int OPH_TIMEOUT_ERROR = - 1004;
+static int OPH_TIMEOUT_ERROR = - 9991004;
 
 
 
@@ -71,7 +71,7 @@ static int OPH_TIMEOUT_ERROR = - 1004;
  *
  *  @return 返回实例
  */
-+(instancetype)errorStatusCodeResponse:(int)statusCode;
++(instancetype)errorStatusCodeResponse:(int)statusCode error:(NSError*)error;
 
 /**
  *
@@ -86,7 +86,11 @@ static int OPH_TIMEOUT_ERROR = - 1004;
  */
 -(NSString*)expectedStringResult;
 
-
+/**
+ *  返回NSDictionary数据
+ *
+ *  @return 返回NSDictionary
+ */
 -(NSDictionary*)excepedNSDictionaryResult;
 
 
