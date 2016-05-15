@@ -1,4 +1,4 @@
-
+> 阅读前，你应该要了解我所倡导的IOS规范 [IOS规范](http://ios-guildline.openpanda.org/)
 
 #PandaHTTP
 >PandaHttp是对网络层的一个简单封装类库
